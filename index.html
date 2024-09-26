@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Sensores - Unidad 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splide/3.6.11/css/splide.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .splide__slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #333;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .sensor-info {
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .sensor-info h3 {
+            color: #007BFF;
+        }
+
+        .sensor-info p {
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="splide" id="sensorPresentation">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <!-- Slide 1 -->
+                <li class="splide__slide">
+                    <div class="sensor-info">
+                        <h2>Unidad 1: Sensores</h2>
+                        <h3>Introducción</h3>
+                        <p>Los sensores son dispositivos esenciales que convierten cambios físicos en señales eléctricas, permitiendo su uso en una variedad de aplicaciones tecnológicas.</p>
+                    </div>
+                </li>
+
+                <!-- Slide 2: Sensores Ópticos -->
+                <li class="splide__slide">
+                    <div class="sensor-info">
+                        <h2>Sensores Ópticos</h2>
+                        <h3>Descripción</h3>
+                        <p>Detectan cambios en la luz para medir o identificar elementos en un entorno.</p>
+                        <h3>Funcionamiento</h3>
+                        <p>Convierten la luz en señales eléctricas interpretadas por un sistema.</p>
+                        <h3>Industria</h3>
+                        <p>Automatización, telecomunicaciones, dispositivos médicos.</p>
+                        <h3>Año de Creación</h3>
+                        <p>Década de 1960.</p>
+                    </div>
+                </li>
+
+                <!-- Slide 3: Sensores de Temperatura -->
+                <li class="splide__slide">
+                    <div class="sensor-info">
+                        <h2>Sensores de Temperatura</h2>
+                        <h3>Descripción</h3>
+                        <p>Miden la temperatura en diferentes entornos.</p>
+                        <h3>Funcionamiento</h3>
+                        <p>Miden el cambio de resistencia o voltaje en respuesta a cambios de temperatura.</p>
+                        <h3>Industria</h3>
+                        <p>Automotriz, médica, meteorológica.</p>
+                        <h3>Año de Creación</h3>
+                        <p>1821 (Termopar).</p>
+                    </div>
+                </li>
+
+                <!-- Slide 4: Sensores de Presión -->
+                <li class="splide__slide">
+                    <div class="sensor-info">
+                        <h2>Sensores de Presión</h2>
+                        <h3>Descripción</h3>
+                        <p>Miden la presión de gases o líquidos.</p>
+                        <h3>Funcionamiento</h3>
+                        <p>Transforman la fuerza ejercida por un gas o líquido en señales eléctricas.</p>
+                        <h3>Industria</h3>
+                        <p>Aviación, automotriz, hidráulica.</p>
+                        <h3>Año de Creación</h3>
+                        <p>Década de 1950.</p>
+                    </div>
+                </li>
+
+                <!-- Slide 5: Sensores de Proximidad -->
+                <li class="splide__slide">
+                    <div class="sensor-info">
+                        <h2>Sensores de Proximidad</h2>
+                        <h3>Descripción</h3>
+                        <p>Detectan la presencia de un objeto cercano sin contacto físico.</p>
+                        <h3>Funcionamiento</h3>
+                        <p>Utilizan ultrasonidos, infrarrojos o campos electromagnéticos.</p>
+                        <h3>Industria</h3>
+                        <p>Automatización, seguridad, móviles.</p>
+                        <h3>Año de Creación</h3>
+                        <p>Década de 1970.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Presentación creada por Max - Ingeniería en Software.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splide/3.6.11/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Splide('#sensorPresentation', {
+                type   : 'loop',
+                perPage: 1,
+                autoplay: true,
+                interval: 3000,
+                pauseOnHover: true,
+                arrows: false,
+                pagination: true
+            }).mount();
+        });
+    </script>
+</body>
+</html>
