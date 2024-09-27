@@ -3,145 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación de Sensores - Unidad 1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splide/3.6.11/css/splide.min.css">
+    <title>Presentación de Sensores</title>
+
+    <!-- Enlace al CSS de Splide.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <!-- Estilos personalizados -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
+            background-image: url("C:/Users/max06/tarea_996/images/background.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            text-align: center;
         }
-
+        h1 {
+            margin: 20px;
+            color: #fff;  /* Cambia el color del título para que sea visible con el background */
+        }
         .splide__slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-            color: #333;
-            background-color: #fff;
-            border: 2px solid #ccc;
-            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            text-align: center;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        .sensor-info {
+            font-size: 1.2em;
             text-align: left;
-            max-width: 800px;
         }
-
-        .sensor-info h3 {
-            color: #007BFF;
+        .splide__slide h2 {
+            margin-bottom: 10px;
+            color: #2c3e50;
         }
-
-        .sensor-info p {
-            line-height: 1.6;
+        .splide__slide p {
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
-
-        .footer {
-            text-align: center;
-            font-size: 14px;
+        .splide__slide strong {
+            display: block;
+            margin-top: 10px;
+        }
+        .sensor-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos del botón */
+        .boton-portada {
+            display: inline-block;
             margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .boton-portada:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
+    <h1>Presentación Unidad 1</h1>
 
-    <div class="splide" id="sensorPresentation">
+    <!-- Estructura de Splide -->
+    <div class="splide">
         <div class="splide__track">
             <ul class="splide__list">
-                <!-- Slide 1 -->
                 <li class="splide__slide">
-                    <div class="sensor-info">
-                        <h2>Unidad 1: Sensores</h2>
-                        <h3>Introducción</h3>
-                        <p>Los sensores son dispositivos esenciales que convierten cambios físicos en señales eléctricas, permitiendo su uso en una variedad de aplicaciones tecnológicas.</p>
-                    </div>
+                    <h2>Sensores Ópticos</h2>
+                    <img src="C:/Users/max06/tarea_996/images/sensor optico.jpg" alt="Sensor Óptico" class="sensor-image">
+                    <p><strong>Descripción:</strong> Detectan cambios en la luz para medir o identificar elementos en un entorno.</p>
+                    <p><strong>Funcionamiento:</strong> Convierten la luz en señales eléctricas interpretadas por un sistema.</p>
+                    <p><strong>Industria:</strong> Automatización, telecomunicaciones, dispositivos médicos.</p>
+                    <p><strong>Año de Creación:</strong> Década de 1960.</p>
                 </li>
-
-                <!-- Slide 2: Sensores Ópticos -->
                 <li class="splide__slide">
-                    <div class="sensor-info">
-                        <h2>Sensores Ópticos</h2>
-                        <h3>Descripción</h3>
-                        <p>Detectan cambios en la luz para medir o identificar elementos en un entorno.</p>
-                        <h3>Funcionamiento</h3>
-                        <p>Convierten la luz en señales eléctricas interpretadas por un sistema.</p>
-                        <h3>Industria</h3>
-                        <p>Automatización, telecomunicaciones, dispositivos médicos.</p>
-                        <h3>Año de Creación</h3>
-                        <p>Década de 1960.</p>
-                    </div>
+                    <h2>Sensores de Temperatura</h2>
+                    <img src="C:/Users/max06/tarea_996/images/sensor temp.jpg" alt="Sensor de Temperatura" class="sensor-image">
+                    <p><strong>Descripción:</strong> Miden la temperatura de un entorno o sistema utilizando diferentes tecnologías, como termopares y RTDs.</p>
+                    <p><strong>Funcionamiento:</strong> Detectan cambios en la temperatura y los convierten en señales eléctricas o digitales.</p>
+                    <p><strong>Industria:</strong> Climatización, automotriz, medicina.</p>
+                    <p><strong>Año de Creación:</strong> 1821 (primer termopar).</p>
                 </li>
-
-                <!-- Slide 3: Sensores de Temperatura -->
                 <li class="splide__slide">
-                    <div class="sensor-info">
-                        <h2>Sensores de Temperatura</h2>
-                        <h3>Descripción</h3>
-                        <p>Miden la temperatura en diferentes entornos.</p>
-                        <h3>Funcionamiento</h3>
-                        <p>Miden el cambio de resistencia o voltaje en respuesta a cambios de temperatura.</p>
-                        <h3>Industria</h3>
-                        <p>Automotriz, médica, meteorológica.</p>
-                        <h3>Año de Creación</h3>
-                        <p>1821 (Termopar).</p>
-                    </div>
+                    <h2>Sensores de Presión</h2>
+                    <img src="C:/Users/max06/tarea_996/images/temp sensor.jpg" alt="Sensor de Presión" class="sensor-image">
+                    <p><strong>Descripción:</strong> Miden la presión de líquidos o gases, esenciales en aplicaciones industriales y médicas.</p>
+                    <p><strong>Funcionamiento:</strong> Convierten la presión aplicada en una señal eléctrica proporcional.</p>
+                    <p><strong>Industria:</strong> Automotriz, médica, sistemas hidráulicos.</p>
+                    <p><strong>Año de Creación:</strong> Década de 1930.</p>
                 </li>
-
-                <!-- Slide 4: Sensores de Presión -->
                 <li class="splide__slide">
-                    <div class="sensor-info">
-                        <h2>Sensores de Presión</h2>
-                        <h3>Descripción</h3>
-                        <p>Miden la presión de gases o líquidos.</p>
-                        <h3>Funcionamiento</h3>
-                        <p>Transforman la fuerza ejercida por un gas o líquido en señales eléctricas.</p>
-                        <h3>Industria</h3>
-                        <p>Aviación, automotriz, hidráulica.</p>
-                        <h3>Año de Creación</h3>
-                        <p>Década de 1950.</p>
-                    </div>
-                </li>
-
-                <!-- Slide 5: Sensores de Proximidad -->
-                <li class="splide__slide">
-                    <div class="sensor-info">
-                        <h2>Sensores de Proximidad</h2>
-                        <h3>Descripción</h3>
-                        <p>Detectan la presencia de un objeto cercano sin contacto físico.</p>
-                        <h3>Funcionamiento</h3>
-                        <p>Utilizan ultrasonidos, infrarrojos o campos electromagnéticos.</p>
-                        <h3>Industria</h3>
-                        <p>Automatización, seguridad, móviles.</p>
-                        <h3>Año de Creación</h3>
-                        <p>Década de 1970.</p>
-                    </div>
+                    <h2>Sensores de Proximidad</h2>
+                    <img src="C:/Users/max06/tarea_996/images/sensor proximidad.jpg" alt="Sensor de Proximidad" class="sensor-image">
+                    <p><strong>Descripción:</strong> Detectan la presencia de objetos cercanos sin necesidad de contacto físico.</p>
+                    <p><strong>Funcionamiento:</strong> Utilizan tecnologías como ultrasonidos, inducción o infrarrojos para detectar la cercanía de objetos.</p>
+                    <p><strong>Industria:</strong> Automatización, robótica, sistemas de seguridad.</p>
+                    <p><strong>Año de Creación:</strong> Década de 1950.</p>
                 </li>
             </ul>
         </div>
     </div>
 
-    <footer class="footer">
-        Presentación creada por Max - Ingeniería en Software.
-    </footer>
+    <a href="portada.html" class="boton-portada" target="_blank">Ir a portada</a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/splide/3.6.11/js/splide.min.js"></script>
+    <!-- Enlace al JavaScript de Splide.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <!-- Inicializa Splide -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            new Splide('#sensorPresentation', {
-                type   : 'loop',
-                perPage: 1,
-                autoplay: true,
-                interval: 3000,
-                pauseOnHover: true,
-                arrows: false,
-                pagination: true
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                type: 'loop',  // Permite que los slides se repitan en bucle
+                perPage: 1,    // Muestra un slide a la vez
+                autoplay: true,  // Los slides cambian automáticamente
+                interval: 3000,  // Tiempo en milisegundos entre cada slide (3 segundos)
+                pagination: true, // Agrega puntos de paginación
+                arrows: true     // Agrega flechas de navegación
             }).mount();
         });
     </script>
